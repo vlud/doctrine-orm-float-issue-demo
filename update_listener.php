@@ -5,9 +5,6 @@ class MyEventListener
 {
     public function preUpdate(LifecycleEventArgs $args)
     {
-        $entity = $args->getObject();
-        $entityManager = $args->getObjectManager();
-
         var_dump(get_class($args->getEntity()));
         var_dump($args->getEntityChangeSet());
     }
